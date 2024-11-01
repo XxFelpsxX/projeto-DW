@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias de Imagens</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Vincula o CSS -->
+</head>
+<body>
+
+  <!-- Contêineres para diferentes categorias -->
+  <div class="container">
+    <img src="caminho-imagem-feminino.jpg" alt="Imagem Feminino">
+    <span class="category-label">Feminino</span>
+  </div>
+
+  <div class="container">
+    <img src="caminho-imagem-masculino.jpg" alt="Imagem Masculino">
+    <span class="category-label">Masculino</span>
+  </div>
+
+  <div class="container">
+    <img src="caminho-imagem-infantil.jpg" alt="Imagem Infantil">
+    <span class="category-label">Infantil</span>
+  </div>
+
+  <div class="container">
+    <img src="caminho-imagem-calcados.jpg" alt="Imagem Calçados">
+    <span class="category-label">Calçados</span>
+  </div>
+
+  <div class="container">
+    <img src="caminho-imagem-acessorios.jpg" alt="Imagem Acessórios">
+    <span class="category-label">Acessórios</span>
+  </div>
+
+  <div class="container">
+    <img src="caminho-imagem-pets.jpg" alt="Imagem Pets">
+    <span class="category-label">Pets</span>
+  </div>
+
+  <!-- Script para exibir as categorias ao passar o mouse -->
+  <script src="scripts.js"></script>
+</body>
+</html>

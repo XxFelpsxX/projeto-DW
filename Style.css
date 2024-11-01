@@ -1,0 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Função para mostrar a categoria ao passar o mouse ou tocar
+  function showCategory(event) {
+    const categoryLabel = event.currentTarget.querySelector(".category-label");
+    categoryLabel.style.display = "block";
+  }
+
+  // Função para esconder a categoria ao remover o mouse ou parar de tocar
+  function hideCategory(event) {
+    const categoryLabel = event.currentTarget.querySelector(".category-label");
+    categoryLabel.style.display = "none";
+  }
+
+  // Seleciona todos os contêineres de imagem com a classe .container
+  const containers = document.querySelectorAll(".container");
+
+  containers.forEach(container => {
+    // Adiciona eventos para mostrar e esconder as categorias
+    container.addEventListener("mouseover", showCategory);
+    container.addEventListener("mouseout", hideCategory);
+    container.addEventListener("touchstart", showCategory);
+    container.addEventListener("touchend", hideCategory);
+  });
+});
