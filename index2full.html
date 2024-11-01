@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens com Categorias</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .categoria {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .imagem {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .container:hover .categoria {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="feminino.jpg" alt="Feminino" class="imagem">
+    <div class="categoria">Feminino</div>
+</div>
+
+<div class="container">
+    <img src="masculino.jpg" alt="Masculino" class="imagem">
+    <div class="categoria">Masculino</div>
+</div>
+
+<div class="container">
+    <img src="infantil.jpg" alt="Infantil" class="imagem">
+    <div class="categoria">Infantil</div>
+</div>
+
+<div class="container">
+    <img src="calcados.jpg" alt="Calçados" class="imagem">
+    <div class="categoria">Calçados</div>
+</div>
+
+<div class="container">
+    <img src="acessorios.jpg" alt="Acessórios" class="imagem">
+    <div class="categoria">Acessórios</div>
+</div>
+
+<div class="container">
+    <img src="pets.jpg" alt="Pets" class="imagem">
+    <div class="categoria">Pets</div>
+</div>
+
+</body>
+</html>
